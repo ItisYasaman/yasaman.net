@@ -1,0 +1,36 @@
+{
+  "button": "Switch Language",
+  "navbar": {
+    "home": "Home",
+    "resume": "Resume",
+    "contact": "Contact",
+    "writing": "Writing",
+    "menu": "Menu",
+    "english": "English",
+    "farsi": "فارسی"
+  },
+  "resume": {
+    "title": "Resume",
+    "content": "My resume will be here"
+  },
+  "contact": {
+    "title": "Contact",
+    "content": "My Contact will be here",
+    "emailSent": "Email sent successfully!",
+    "back": "&larr; Back",
+    "form": {
+      "title": "Title",
+      "email": "Your Email",
+      "message": "Your Message",
+      "submit": "Submit"
+    }
+  },
+  "home": {
+    "title": "Yasaman Choubeh",
+    "content": "I am Yasaman, a soul with a boundless array of interests, yet only a few have I pursued with fervent dedication. Born in the year of the Serpent, I wield my pen with my left hand. Though I stretch my education as far as it will go, it intertwines neither with literature nor with the arts. Writing has been my constant companion for as long as memory serves, even before the mastery of reading and writing graced my fingertips. My journey began with tragedy, meandered through the realms of fantasy, and after crafting an extensive fantasy saga, I found myself drawn to the whispers of reality, eager to explore its depths."
+  },
+  "writing": {
+    "title": "Writing",
+    "content": "My writings will be here"
+  }
+}

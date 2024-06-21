@@ -1,16 +1,5 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  position: relative;
 }
 
 .App-header {
@@ -24,15 +13,92 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.App-header.rtl {
+  flex-direction: column-reverse;
+  text-decoration: rtl;
+}
+
+.App.ltr {
+  font-family: 'English Font Name', sans-serif;
+  text-decoration: ltr;
+}
+
+.App.rtl {
+  font-family: vazir, sans-serif;
+}
+
+.content {
+  position: relative;
+}
+
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(0);
   }
 }
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bg-half {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: -1;
+}
+
+.bg-left {
+  left: 0;
+  background: url('./img/2b.png') no-repeat center center fixed;
+  background-size: cover;
+  animation: slideInLeft 2s forwards;
+  opacity: 0.1;
+}
+
+.bg-right {
+  right: 0;
+  background: url('./img/1b.png') no-repeat center center fixed;
+  background-size: cover;
+  animation: slideInRight 2s forwards;
+  opacity: 0.1;
+
+}
+
+@media (max-width: 768px) {
+  .bg-half {
+    width: 100%;
+  }
+
+  .bg-left {
+    right: 0;
+    animation: slideInLeft 2s forwards;
+  }
+
+  .bg-right {
+    left: 0;
+    animation: slideInRight 2s forwards;
+  }
+}
+
