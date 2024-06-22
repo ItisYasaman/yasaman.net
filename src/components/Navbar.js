@@ -1,13 +1,20 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Navbar from "react-bootstrap/Navbar"; // Import Navbar from react-bootstrap
-import Nav from "react-bootstrap/Nav"; // Import Nav from react-bootstrap
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import br from "../img/br.gif";
 
-const MyNavbar = ({ changeLanguage }) => {
-  const { t } = useTranslation();
+const MyNavbar = () => {
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === "en" ? "fa" : "en";
+    i18n.changeLanguage(newLang);
+  };
+
+  const languageLabel = i18n.language === "en" ? "فارسی" : "English";
 
   return (
     <Navbar bg="light" expand="lg" variant="light" className="navbar">
@@ -17,24 +24,21 @@ const MyNavbar = ({ changeLanguage }) => {
       <Nav>
         <Nav.Link className="nav-pages_link" as={Link} to="/">
           {t("navbar.home")}
-        </Nav.Link >
+        </Nav.Link>
         <Nav.Link className="nav-pages_link" as={Link} to="/resume">
           {t("navbar.resume")}
-        </Nav.Link >
+        </Nav.Link>
         <Nav.Link className="nav-pages_link" as={Link} to="/contact">
           {t("navbar.contact")}
         </Nav.Link>
         <Nav.Link className="nav-pages_link" as={Link} to="/writing">
-          {t("navbar.writing")}
+          {t("navbar.blog")}
         </Nav.Link>
       </Nav>
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Link className="ch-lang" onClick={() => changeLanguage("en")}>
-            {t("navbar.english")}
-          </Nav.Link >
-          <Nav.Link  className="ch-lang" onClick={() => changeLanguage("fa")}>
-            {t("navbar.farsi")}
+        <Nav className="ml-auto ch-lang">
+          <Nav.Link className="ch-lang" onClick={toggleLanguage}>
+            {languageLabel}
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

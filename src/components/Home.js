@@ -7,10 +7,10 @@ const Home = () => {
 
   return (
     <div className="Home">
-        <h1>{t("home.title")}</h1>
+          <img className="yas-png" src={require("../img/yas.png")} alt="Y" />
       <div className="home-container">
         <div className="Home-second_container">
-          <img className="yas-png" src={require("../img/yas.png")} alt="Y" />
+        <h1>{t("home.title")}</h1>
           <p>{t("home.content")}</p>
         </div>
       </div>

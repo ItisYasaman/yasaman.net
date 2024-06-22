@@ -7,8 +7,7 @@ const Writing = () => {
 
   return (
     <div className="Writing">
-      <h1>{t("writing.title")}</h1>
-      <p>{t("writing.content")}</p>
+      <h1>{t("blog.title")}</h1>
     </div>
   );
 };

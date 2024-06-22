@@ -1,7 +1,33 @@
-.Resume{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
+.Resume {
+  position: relative;
+  font-family: 'Times New Roman', Times, serif;
+  top: 8rem;
+  max-width: 800px;
+  max-height: 800px !important;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  background-color: #ffffff6a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.Resume h1, .Resume h2 {
+  color: #333;
+}
+
+.resume-content p {
+  text-align: justify;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: 12px;
 }
