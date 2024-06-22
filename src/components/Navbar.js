@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import br from "../img/br.gif";
+import y from "../img/y.gif";
 
 const MyNavbar = () => {
   const { t, i18n } = useTranslation();
@@ -19,7 +19,7 @@ const MyNavbar = () => {
   return (
     <Navbar bg="light" expand="lg" variant="light" className="navbar">
       <Navbar.Brand as={Link} to="/">
-        <img src={br} alt="Brand" className="br-image"/>
+        <img src={y} alt="Brand" className="br-image"/>
       </Navbar.Brand>{" "}
       <Nav>
         <Nav.Link className="nav-pages_link" as={Link} to="/">
