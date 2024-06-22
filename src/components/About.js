@@ -1,15 +1,15 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import "./Writing.css";
+import "./About.css";
 
-const Writing = () => {
+const About = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="Writing">
-      <h1>{t("blog.title")}</h1>
+    <div className="about">
+      <h1>{t("about.title")}</h1>
     </div>
   );
 };
 
-export default Writing;
+export default About;

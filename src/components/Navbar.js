@@ -19,7 +19,7 @@ const MyNavbar = () => {
   return (
     <Navbar bg="light" expand="lg" variant="light" className="navbar">
       <Navbar.Brand as={Link} to="/">
-        <img src={y} alt="Brand" className="br-image"/>
+        <img src={y} alt="Brand" className="br-image" />
       </Navbar.Brand>{" "}
       <Nav>
         <Nav.Link className="nav-pages_link" as={Link} to="/">
@@ -31,10 +31,19 @@ const MyNavbar = () => {
         <Nav.Link className="nav-pages_link" as={Link} to="/contact">
           {t("navbar.contact")}
         </Nav.Link>
-        <Nav.Link className="nav-pages_link" as={Link} to="/writing">
-          {t("navbar.blog")}
+        <Nav.Link className="nav-pages_link" as={Link} to="/About">
+          {t("navbar.about")}
         </Nav.Link>
       </Nav>
+      <a
+        className="nav-pages_blog"
+        href="https://www.google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {t("navbar.blog")}
+        <i class="fa-solid fa-blog blog-icon"></i>{" "}
+      </a>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto ch-lang">
           <Nav.Link className="ch-lang" onClick={toggleLanguage}>

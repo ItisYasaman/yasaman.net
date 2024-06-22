@@ -5,7 +5,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import MyNavbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
-import Writing from "./components/Writing";
+import About from "./components/About";
 import Home from "./components/Home";
 import "./App.css";
 import Footer from "./components/Footer";
@@ -37,7 +37,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/writing" element={<Writing />} />
+              <Route path="/about" element={<About />} />
             </Routes>
           </CSSTransition>
         </TransitionGroup>
