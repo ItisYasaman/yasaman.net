@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react"; // Import useEffect
 import { useTranslation } from "react-i18next";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import MyNavbar from "./components/Navbar";
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import About from "./components/About";
 import Home from "./components/Home";
@@ -11,8 +11,15 @@ import "./App.css";
 import Footer from "./components/Footer";
 
 function App() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const location = useLocation();
+
+  useEffect(() => {
+    // Set default language to Farsi if no other language preference is detected
+    if (!localStorage.getItem('i18nextLng')) {
+      i18n.changeLanguage('fa');
+    }
+  }, [i18n]);
 
   // Determine if current language is RTL
   const isRTL = i18n.language === "fa";
@@ -36,7 +43,7 @@ function App() {
             <Routes location={location}>
               <Route path="/" element={<Home />} />
               <Route path="/resume" element={<Resume />} />
-              <Route path="/contact" element={<Contact />} />
+              {/* <Route path="/contact" element={<Contact />} /> */}
               <Route path="/about" element={<About />} />
             </Routes>
           </CSSTransition>

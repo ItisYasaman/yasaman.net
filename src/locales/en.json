@@ -6,9 +6,9 @@
     "contact": "Contact",
     "about": "about",
     "menu": "Menu",
-    "english": "English",
+    "english": "EN",
     "farsi": "فارسی",
-    "blog": " My Blog "
+    "blog": " Blog "
   },
   "resume": {
     "title": "My Resume",
@@ -33,8 +33,8 @@
     }
   },
   "home": {
-    "title": "Yasaman Choubeh",
-    "content": "I am Yasaman, a soul with a boundless array of interests, yet only a few have I pursued with fervent dedication. Born in the year of the Serpent, I wield my pen with my left hand. Though I stretch my education as far as it will go, it intertwines neither with literature nor with the arts. Writing has been my constant companion for as long as memory serves, even before the mastery of reading and writing graced my fingertips. My journey began with tragedy, meandered through the realms of fantasy, and after crafting an extensive fantasy saga, I found myself drawn to the whispers of reality, eager to explore its depths."
+    "title": "Welcome to my website.",
+    "content": "Welcome to my website. I am Yasaman Choubeh, and this platform is dedicated to showcasing my literary works. Since my teenage years, I have been crafting fantasy stories. My longer works primarily fall within the genres of fantasy and magical realism, while most of my shorter pieces are rooted in fiction. Some of my favorite authors are Darren Shan, Abbas Maroufi, Haruki Murakami, and many other talented writers whose remarkable works I've had the pleasure of discovering. You can reach me at: Yasaman.r.choubeh@gmail.com"
   },
   "about": {
     "title": "About"

@@ -14,7 +14,7 @@ const MyNavbar = () => {
     i18n.changeLanguage(newLang);
   };
 
-  const languageLabel = i18n.language === "en" ? "فارسی" : "English";
+  const languageLabel = i18n.language === "en" ? "فارسی" : "English ";
 
   return (
     <Navbar bg="light" expand="lg" variant="light" className="navbar">
@@ -28,24 +28,23 @@ const MyNavbar = () => {
         <Nav.Link className="nav-pages_link" as={Link} to="/resume">
           {t("navbar.resume")}
         </Nav.Link>
-        <Nav.Link className="nav-pages_link" as={Link} to="/contact">
+        {/* <Nav.Link className="nav-pages_link" as={Link} to="/contact">
           {t("navbar.contact")}
-        </Nav.Link>
+        </Nav.Link> */}
         <Nav.Link className="nav-pages_link" as={Link} to="/About">
           {t("navbar.about")}
         </Nav.Link>
-      </Nav>
       <a
-        className="nav-pages_blog"
+        className="nav-pages_blog_btn"
         href="https://www.google.com"
         target="_blank"
         rel="noopener noreferrer"
       >
         {t("navbar.blog")}
-        <i class="fa-solid fa-blog blog-icon"></i>{" "}
       </a>
+      </Nav>
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto ch-lang">
+        <Nav className="ml-auto">
           <Nav.Link className="ch-lang" onClick={toggleLanguage}>
             {languageLabel}
           </Nav.Link>
