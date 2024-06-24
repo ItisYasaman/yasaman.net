@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"; // Import useEffect
 import { useTranslation } from "react-i18next";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import MyNavbar from "./components/Navbar";
 // import Contact from "./components/Contact";
