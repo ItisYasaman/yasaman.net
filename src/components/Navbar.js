@@ -14,7 +14,7 @@ const MyNavbar = () => {
     i18n.changeLanguage(newLang);
   };
 
-  const languageLabel = i18n.language === "en" ? "فارسی" : "English ";
+  const languageLabel = i18n.language === "en" ? "FA" : "EN ";
 
   return (
     <Navbar bg="light" expand="lg" variant="light" className="navbar">

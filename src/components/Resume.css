@@ -1,7 +1,6 @@
 .Resume {
   position: relative;
-  font-family: 'Times New Roman', Times, serif;
-  top: 8rem;
+  top: 7rem;
   max-width: 800px;
   max-height: 800px !important;
   margin: 10px auto;
@@ -18,9 +17,7 @@
 
 .resume-content p {
   text-align: justify;
-  line-height: 1.1;
-  margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 ul {
@@ -30,4 +27,6 @@ ul {
 
 li {
   margin-bottom: 12px;
+  font-size: .8rem;
+  line-height: 1;
 }

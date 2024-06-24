@@ -1,3 +1,10 @@
+*{
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* In your App.css or a relevant CSS file */
+
 .App {
   position: relative;
 }
@@ -13,11 +20,6 @@
   color: white;
 }
 
-button {
-  padding: 10px 20px;
-  margin-top: 20px;
-  cursor: pointer;
-}
 
 .App.rtl {
   direction: rtl;

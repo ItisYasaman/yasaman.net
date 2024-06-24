@@ -1,6 +1,7 @@
 
 .yas-png{
   width: 200px;
+  opacity: 50%;
 }
 
 
@@ -34,7 +35,47 @@ h1 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #666;
   line-height: 1.6;
+  font-family: vazir;
+}
+
+
+@media screen and (max-width: 980px) {
+
+
+  .Home {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  .Home-second_container {
+    background-color: #ffffffae;
+
+  }
+  
+.yas-png{
+  position: fixed;
+  z-index: -1;
+  width: 40%;
+}
+  .home-container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .Home-second_container {
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #000;
+  }
 }
