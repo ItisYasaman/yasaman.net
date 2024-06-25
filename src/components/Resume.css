@@ -30,3 +30,43 @@ li {
   font-size: .8rem;
   line-height: 1;
 }
+
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+  .Resume {
+    display: flex;
+    position: relative;
+    top: 4.5rem;
+    max-width: 100%;
+    height: auto; 
+    max-height: 90% !important; 
+    padding: 10px;
+    border-radius: 8px;
+    overflow-y: auto !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 1rem;
+  }
+  .Resume h1, .Resume h2 {
+    color: #333;
+  }
+  
+  .resume-content p {
+    text-align: justify;
+    font-size: .6rem;
+  }
+  
+  ul {
+    list-style-type: square;
+    padding-left: 10px;
+  }
+  
+  li {
+    margin-bottom: 12px;
+    font-size: .5rem;
+    line-height: 1;
+  }
+}

@@ -31,9 +31,9 @@ const MyNavbar = () => {
         {/* <Nav.Link className="nav-pages_link" as={Link} to="/contact">
           {t("navbar.contact")}
         </Nav.Link> */}
-        <Nav.Link className="nav-pages_link" as={Link} to="/About">
+        {/* <Nav.Link className="nav-pages_link" as={Link} to="/About">
           {t("navbar.about")}
-        </Nav.Link>
+        </Nav.Link> */}
       <a
         className="nav-pages_blog_btn"
         href="https://www.google.com"

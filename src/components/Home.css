@@ -10,7 +10,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 90vh;
   color: #333;
   font-family: 'Times New Roman', Times, serif;
 
@@ -31,6 +31,7 @@
 
 h1 {
   font-size: 2rem;
+  font-family: vazir;
   color: #4a4a4a;
 }
 
@@ -42,13 +43,15 @@ p {
 }
 
 
-@media screen and (max-width: 980px) {
-
+@media screen and (max-width: 900px) {
 
   .Home {
+    display: flex;
+    position: relative;
     flex-direction: column;
     padding: 20px;
-    text-align: center;
+    min-width: 100%;
+    top: 25%;
   }
   .Home-second_container {
     background-color: #ffffffae;
@@ -75,7 +78,41 @@ p {
   }
 
   p {
-    font-size: 1rem;
+    font-size: .9rem;
     color: #000;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 900px) {
+
+  .yas-png{
+    position: fixed;
+    z-index: -1;
+    width: 20%;
+  }
+
+  .Home {
+    flex-direction: column;
+    width: 100%; 
+  }
+
+  .home-container {
+    width: 100%; 
+    padding: 2px; 
+  }
+
+  .Home-second_container {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px; 
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.5rem;
+    color: #666; 
   }
 }
