@@ -36,7 +36,7 @@ const MyNavbar = () => {
         </Nav.Link> */}
       <a
         className="nav-pages_blog_btn"
-        href="https://www.google.com"
+        href="https://yasblog.netlify.app/myblog"
         target="_blank"
         rel="noopener noreferrer"
       >
